@@ -57,11 +57,10 @@ public class SmsServiceImpl implements SmsService {
     @Override
     public void testingTwilio(String message, String number){
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+
         Message msg = Message.creator(new PhoneNumber(number),
                 new PhoneNumber("+15005550006"),//"+553140421656"),
                 message).create();
-
-        Object status = msg.getStatus();
 
         System.out.println(msg.getSid());
     }
