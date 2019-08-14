@@ -1,6 +1,7 @@
-package com.bests.smssender.service;
+package com.bests.smssender.service.impl;
 
 import com.bests.smssender.data.dto.SmsData;
+import com.bests.smssender.service.SmsService;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
