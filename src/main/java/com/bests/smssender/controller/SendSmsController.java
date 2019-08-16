@@ -18,7 +18,7 @@ public class SendSmsController {
 
     @PostMapping
     public ResponseEntity send(@RequestBody Content content) throws Exception {
-        smsService.testingTwilio(content.getMessage(), content.getNumber());
+        smsService.sendTwilio(content.getMessage(), content.getNumber());
         return new ResponseEntity(HttpStatus.OK);
     }
 

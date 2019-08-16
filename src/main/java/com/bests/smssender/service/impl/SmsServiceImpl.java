@@ -55,7 +55,7 @@ public class SmsServiceImpl implements SmsService {
     }
 
     @Override
-    public void testingTwilio(String message, String number){
+    public void sendTwilio(String message, String number){
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
         Message msg = Message.creator(new PhoneNumber(number),
